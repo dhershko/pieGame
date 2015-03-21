@@ -1,4 +1,5 @@
 
+
 def init():
 	global XDIM
 	global YDIM 
@@ -42,15 +43,15 @@ def init():
 	screen = None
 	allBalls = []
 	allClumps = []
-	gravity = 0
-	velRetainedOnCollision = 1
+	gravity = 1
+	velRetainedOnCollision = .8
 	epsilon = .000001
 	numberOfBalls = 1
-	collisionSpeedToClump = 3
+	collisionSpeedToClump = 99999
 	clumpEscapeSpeed = 10
 	startRadius = 10
-	startXVel = 5
-	startYVel = 5
+	startXVel = 10
+	startYVel = 10
 	goToAcc = 1
 	shootTheta = 0
 	allCollisionlessParticles = []
@@ -58,5 +59,4 @@ def init():
 	allWalls = []
 	startColor = (0, 255, 0)
 	dirt = None
-
 

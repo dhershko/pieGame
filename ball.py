@@ -6,8 +6,6 @@ import clump
 import game
 
 class Ball(pygame.sprite.Sprite):
-	print "blah"
-
 	def __init__(self, xLoc, yLoc, xVel, yVel, xAcc, yAcc, radius, color):
 		pygame.sprite.Sprite.__init__(self)
 		g.maxRadius = max(g.maxRadius, radius)
@@ -306,7 +304,7 @@ class Ball(pygame.sprite.Sprite):
 			yPointOfContact = self.y + self.radius*math.sin(collisionAngle)
 			speedDif1 = math.fabs(oldSpeed1-newSpeed1)
 			speedDif2 = math.fabs(oldSpeed2-newSpeed2)
-			if speedDif1 + speedDif2 > 5:
+			if speedDif1 + speedDif2 > 0:
 				game.makeSparksAt(self.radius, xPointOfContact, yPointOfContact, speedDif1 + speedDif2, self.color)
 
 
