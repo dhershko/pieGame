@@ -6,6 +6,8 @@ import clump
 import game
 
 class Ball(pygame.sprite.Sprite):
+	print "blah"
+
 	def __init__(self, xLoc, yLoc, xVel, yVel, xAcc, yAcc, radius, color):
 		pygame.sprite.Sprite.__init__(self)
 		g.maxRadius = max(g.maxRadius, radius)
